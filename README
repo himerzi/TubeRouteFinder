@@ -1,0 +1,14 @@
+
+Tube Route Finder - A program which finds and describes how to travel between underground stations. The program relies on an implementation of the floyd  algorithm.
+
+Compile and run TubeRouteFinder.java, which has the main method.\
+
+Michael Detmold - 02/2011\
+
+The data used here is based upon the "London Underground Geographic Maps/CSV" which is available at http://commons.wikimedia.org/wiki/London_Underground_geographic_maps/CSV#Line_definitions. The program could be used with other data, representative of a different subway network.
+
+The program requires three files which should be kept in the same folder (the source"root folder") as the source code. The data should be in alphabetical order.
+
+1. a file named "alltubestations.txt" Which contains a unique "key" value for a station, followed by the name of the station on a new line.\
+2. A similarly formatted file named "lines.txt" Which contains a unique "key" value for each line, followed by the name of the line on a new line.
+3. A file named "lineDefinitions.txt". This is how the adjacency matrix is built. First there is the key value of a given station, on the next line is a key value of a station adjacent to the above station, and on the third line there is the key value of the line these stations are on. This patter is repeated so as to describe the whole network.
